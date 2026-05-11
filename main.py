@@ -6,9 +6,7 @@ import os
 
 historico = []
 
-
 # UTILITÁRIOS
-
 
 def carregar_sistema(acao):
     """Animação de carregamento no terminal."""
@@ -43,7 +41,6 @@ def registrar_foto(modo, configuracoes):
         "config": configuracoes,
         "hora": time.strftime("%H:%M:%S")
     })
- 
 
 
 # MODOS DA CÂMERA
