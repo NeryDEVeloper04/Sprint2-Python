@@ -78,7 +78,7 @@ def auto():
         abertura = "f/2"
  
     config = f"ISO {iso} | Velocidade {velocidade} | Abertura {abertura}"
-    print(f"\n📷 Configuração automática aplicada:\n  {config}")
+    print(f"\n Configuração automática aplicada:\n  {config}")
     registrar_foto("Automático", config)
     return "Modo automático configurado"
  
@@ -97,13 +97,13 @@ def pets():
     velocidade = "1/500s"
     abertura = "f/3.5"
     config = f"ISO {iso} | Velocidade {velocidade} | Abertura {abertura}"
-    print(f"📷 Configurações para pets aplicadas:\n  {config}")
+    print(f" Configurações para pets aplicadas:\n  {config}")
  
     # Funcionalidade extra: botão sonoro
     usar_botao = input("\nUsar botão sonoro para chamar o pet? (s/n): ").strip().lower()
     if usar_botao == "s":
         carregar_sistema("Chamando pet")
-        print("🔔 Botão sonoro acionado!")
+        print(" Botão sonoro acionado!")
     else:
         print("Botão sonoro não utilizado.")
  
@@ -140,7 +140,7 @@ def retrato():
     iso = 200
     velocidade = "1/200s"
     config = f"ISO {iso} | Velocidade {velocidade} | Abertura {abertura} | {foco}"
-    print(f"\n📷 Configurações de retrato aplicadas:\n  {config}")
+    print(f"\n Configurações de retrato aplicadas:\n  {config}")
     registrar_foto("Retrato", config)
     return "Modo retrato configurado"
  
@@ -167,7 +167,7 @@ def paisagens():
         obs = "velocidade padrão para paisagem estática"
  
     config = f"ISO {iso} | Velocidade {velocidade} | Abertura {abertura} | {obs}"
-    print(f"\n📷 Configurações de paisagem aplicadas:\n  {config}")
+    print(f"\n Configurações de paisagem aplicadas:\n  {config}")
     registrar_foto("Paisagens", config)
     return "Modo paisagens configurado"
  
@@ -195,7 +195,7 @@ def manual():
     abertura = abertura_opcoes[idx - 1]
  
     config = f"ISO {iso} | Velocidade 1/{velocidade}s | Abertura {abertura}"
-    print(f"\n📷 Configurações manuais aplicadas:\n  {config}")
+    print(f"\n Configurações manuais aplicadas:\n  {config}")
     registrar_foto("Manual", config)
     return "Modo manual configurado"
  
@@ -255,7 +255,7 @@ def menu():
         resultado = funcao()
  
         if resultado:
-            print(f"\n✅ {resultado} — pronto para fotografar.")
+            print(f"\n {resultado} — pronto para fotografar.")
  
         input("\nPressione ENTER para voltar ao menu...")
 
